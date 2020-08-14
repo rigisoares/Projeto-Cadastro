@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento</title>
+
+    <style>
+        /* Aqui fazemos a estilização da div*/
+        #dv1{
+            width: 200px;
+            height: 200px;
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+<body>
+    <!-- criação da div em html-->
+    <div id="dv1"></div>
+        <br>
+    <!--criação do botão em html e geração de comando de evento em Javascript-->
+    <button onmouseover="mudaPos(this)">Clique em mim</button>
+
+    <script>
+        function mudaPos(obj){
+            obj.style.position = "absolute";
+            obj.style.left = Math.random()*500 + "px";
+            obj.style.top = Math.random()*500 + "px";
+        }
+    </script>
+</body>
+</html>
